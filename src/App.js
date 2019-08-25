@@ -72,7 +72,7 @@ const mapStateToProps = (state, ownProps) => {
     hasQuizCompleted: getState(state, 'problem.hasQuizCompleted'),
     currentScore:getState(state,'problem.currentScore'),
     operator: getState(state,'problem.operator'),
-    // TODO(Subham): Removal candidate - activeSectionIdx
+    
     activeSectionIdx: getState(state, 'problem.activeSectionIdx')
   }
 }

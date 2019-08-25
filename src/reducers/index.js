@@ -4,7 +4,7 @@ import { ADD_NEW_PROLEM, INIT_PROBLEMS, UPDATE_ACTIVE_SECTION, UPDATE_SOLN_STATU
 import { OPERATOR_SYMBOLS, ANSWER_STATUS, QUES_COUNT_UPPER_CAP_IN_QUIZ, RANDOM } from "../constants"
 
 const formQues = (operands, operator) => {
-    // TODO(sunil) Change it to reduce method
+   
     let ques = operands[0] + operator + operands[1]
     return ques
 }
@@ -52,7 +52,7 @@ const formProblem = (operands, operator) => {
 }
 
 const createRandomOperands = () => {
-	// TODO(sunil): Write implementation
+	
 	let min=1; 
     let max=10;  
 	let num1 = Math.floor(Math.random() * (+max - +min) + +min); 
@@ -61,7 +61,7 @@ const createRandomOperands = () => {
 }
 
 const getRandomOperator = () => {
-	// TODO(sunil): Write implementation
+	
 	let min=1; 
     let max=5;  
 	let num = Math.floor(Math.random() * (+max - +min) + +min); 
@@ -99,7 +99,7 @@ const problem = (state = {}, action) => {
 							
 				}
 			case ADD_NEW_PROLEM:
-				// TODO(sunil): Refactor this block
+				
 
 				let ope = modifiedState.operator[sectionIdx];
 				const newProblem = formProblem(createRandomOperands(), ope)	
